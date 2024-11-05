@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URI)
         console.log("Connected to MongoDB");
         
         app.listen(process.env.PORT, () => {
-            console.log("listening on port 3000");
+            console.log("listening on port", process.env.PORT);
         })
     })
     .catch((err) => {
